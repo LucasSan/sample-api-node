@@ -36,17 +36,6 @@ function one(query) {
     try {
       const workedQuery = Object.assign({}, query)
 
-      // Billet.findAll({
-      //   where: {
-      //     domain_account_id: workedQuery.code
-      //   }
-      // })
-      //   .then(item => {
-      //     return resolve(item)
-      //   })
-      //   .catch(err => {
-      //     return reject(err)
-      //   })
     } catch (err) {
       console.log(`[sample-node-api] => [users/service.js] => [one] => ${err}.`)
       return reject(err)
