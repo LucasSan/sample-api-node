@@ -6,7 +6,7 @@ const UserController = {
   getByCode
 }
 
-function create(req, res) {
+const create = (req, res) => {
   const { body } = Object.assign({}, req)
 
   userService
@@ -21,7 +21,7 @@ function create(req, res) {
     })
 }
 
-function getByCode(req, res) {
+const getByCode = (req, res) => {
   const { code } = Object.assign({}, req.params)
 
   userService
@@ -43,6 +43,4 @@ function getByCode(req, res) {
     })
 }
 
-module.exports = function factory() {
-  return UserController
-}
+module.exports = () => UserController
