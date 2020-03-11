@@ -24,6 +24,7 @@ jobs:
         node-version: [10.x, 12.x]
 
     steps:
+    - uses: wagoid/commitlint-github-action@v1
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
