@@ -35,7 +35,7 @@ function one(query) {
   return new Promise((resolve, reject) => {
     try {
       const workedQuery = Object.assign({}, query)
-
+      return resolve()
     } catch (err) {
       console.log(`[sample-node-api] => [users/service.js] => [one] => ${err}.`)
       return reject(err)
